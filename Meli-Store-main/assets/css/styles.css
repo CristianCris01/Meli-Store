@@ -25,7 +25,11 @@ body {
   color: var(--text);
   background: linear-gradient(180deg, var(--color-4), var(--white));
 }
-
+.admin-body {
+  background: linear-gradient(180deg, var(--color-4), var(--white));
+  width: 100%;
+  height: 100vh;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -163,6 +167,22 @@ a {
   gap: 16px;
 }
 
+.tarjetas-admin {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.marca-admin {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .tarjeta {
   background: var(--white);
   padding: 0;
@@ -176,6 +196,24 @@ a {
   overflow: hidden;
 }
 
+.tarjeta-admin {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.tarjeta-img-admin {
+  background: linear-gradient(180deg, var(--color-4), var(--white));
+
+  width: 168px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  border-radius: 18px;
+}
 .tarjeta-img-top {
   width: 100%;
   height: 180px;
@@ -200,7 +238,7 @@ a {
 
 .tarjeta-titulo {
   margin: 0;
-  font-size: 1.05rem;
+ 
 }
 
 .tarjeta-texto {
@@ -247,7 +285,12 @@ a {
 .interruptor-menu {
   display: none;
 }
-
+#inputName, #inputPassword {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d7d7d7;
+}
 @media (max-width: 900px) {
   .diseno {
     grid-template-columns: 220px 1fr;

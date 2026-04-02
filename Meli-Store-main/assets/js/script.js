@@ -70,7 +70,7 @@ let productoLoMasVendido = [ {
 }]
 
 let productosHogar = [ {
-    "imagen":"./assets/img/Hogar 1.jpeg",
+    "imagen":"./assets/img/hogar 1.jpeg",
     "titulo": "Oferta!",
     "descripcion": "Mesa de centro",
     "precio": "$18.990"
