@@ -3,6 +3,7 @@
   <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://127.0.0.1:5500;">
         <title>Meli Store</title>
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +21,10 @@
                     <p class="tarjeta-texto">Bienvenido al panel de administración</p>
                     <input type="text" placeholder="Nombre de usuario" id="inputName">
                     <input type="password" placeholder="Contraseña"  id="inputPassword">
-                    <a href="#" class="boton boton-primario">Ingresar</a>
+                    <button id="buttonAdmin" class="boton boton-primario">Ingresar</button>
                 </div>
             </div>
-    
+    <script src="./assets/js/scriptAdmin.js"></script>
   </body>
+</html>  
         
