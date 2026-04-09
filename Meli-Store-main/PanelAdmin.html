@@ -4,14 +4,44 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://127.0.0.1:5500;">
-        <title>Meli Store</title>
+        <title>Meli Store Panel</title>
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body class = "admin-body">
+  <body class = "admin-body-panel">
+        <div class="seccion-admin">
+            <h1>Panel de Administración</h1>
+            <h3>Ingresa aqui tus productos segun su categoría</h3>
+            <div>
+                <h5>Selecciona una categoría</h5>
+                <select name="Categoria" id="categoria">
+                    <option value="">Selecciona una categoría</option>
+                    <option value="Lo mas vendido">Lo más vendido</option>
+                    <option value="Productos Hogar">Productos Hogar</option>
+                    <option value="Productos Cocina">Productos Cocina</option>
+                    <option value="Productos Dormitorio">Productos Dormitorio</option>
+
+                </select>
+                <h5>Ingresa el título del producto</h5>
+                <input type="text" placeholder="Nombre del producto" id="inputNamePanel">
+                <h5>Ingresa la descripción</h5>
+                <input type="text" placeholder="Descripción" id="inputDescription">
+                <h5>Ingresa el precio</h5>
+
+                <input type="number" placeholder="Precio" id="inputPrice">
+                <h5>Sube la imagen del producto</h5>
+                <input type="file" placeholder="Sube aqui la imagen" id="inputImage">
+            </div>
+        </div>
+
+
+
+
+
       <script src="./assets/js/scriptAdmin.js"></script>
       
            
-  </body>
+    </body>
+</html>
